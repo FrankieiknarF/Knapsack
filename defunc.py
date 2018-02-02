@@ -49,7 +49,7 @@ def selection(fitness, populations):
     # fitness总和 这里都是value的总和
     for i in fitness_new:
         fitness_total += i[1]
-    # 新fitness
+    # 新fitness jijijijji
     for i in fitness_new:
          fitness_ave.append(i[1]/fitness_total)
     # fitness积累值
