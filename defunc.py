@@ -68,7 +68,7 @@ def selection(fitness, populations):
     # 轮盘赌的方式进行重复生成新的种群pops
     populations_new = []
     i = 0
-    while len(populations_new) < len(populations):         # 要得到原始populations的个数
+    while len(populations_new) < len(populations):          # 要得到原始populations的个数
         rand_num = random.uniform(0, 1)                     # 随机生成0到1之间的数，
         if rand_num > 0:                                    # 如果不是0，
             while i < len(fitness_pop):                     # 则循环去确认小于哪个累积量，则提取该累积量i+1的原始种群
